@@ -1,0 +1,11 @@
+apiVersion: wardle.k8s.io/v1alpha1
+kind: ConfigMapReplica
+metadata:
+  name: example-cmr
+spec:
+  namespace: default
+  sourceConfigMapName: cm-source
+  targetNamespaces:
+  - test1
+  - test2
+  - test3
